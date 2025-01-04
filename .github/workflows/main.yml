@@ -13,7 +13,7 @@ jobs:
       - name: ssh connection 
         uses: appleboy/ssh-action@1.2.0
         with:
-          host: ${{ secretes.HOST }}
+          host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.KEY}}
           script_path: scripts/main.sh
