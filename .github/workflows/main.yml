@@ -8,7 +8,7 @@ on:
 jobs: 
   deploy:
     name: deploy 
-    runs-on: unbuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: ssh connection 
         uses: appleboy/ssh-action@1.2.0
