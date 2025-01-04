@@ -10,10 +10,12 @@ jobs:
     name: deploy 
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
       - name: ssh connection 
         uses: appleboy/ssh-action@v1.2.0
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.KEY}}
-          script_path: scripts/main.sh
+          script_path: .scripts/main.sh
