@@ -18,5 +18,4 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.KEY}}
-          script: echo "Current directory: $(pwd)"
           script_path: ".github/scripts/main.sh"
