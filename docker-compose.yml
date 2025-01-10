@@ -1,11 +1,14 @@
 version: '3'
 
 services:
-  app:
-    context: .
+  i-notes-frontend:
+    build:
+      context: .
+    develop:
+      watch:
+        - path: ./src
+          action: sync
+          target: app/src
     ports:
-      - "3000:3000"
-    volumes:
-      - ./src:/app/src
-      - ./vite.config.js:/app/vite.config.js
+       - "5173:5173"
     command: ["npm", "run", "dev"]
