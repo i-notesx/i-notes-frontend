@@ -10,4 +10,4 @@ service_name="backend"
 cd "$project_dir/$project_name"
 git pull
 
-docker-compose restart
+docker-compose up --build

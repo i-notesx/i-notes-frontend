@@ -5,7 +5,8 @@ services:
     command: ["npm", "run", "build"]
     newworks:
       - reverse-proxy
-
+    volumes:
+      /app/dist:/usr/share/nginx/html/inotes
 networks:
   reverse-proxy:
     external: true
