@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  app:
+    context: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./src:/app/src
+      - ./vite.config.js:/app/vite.config.js
+    command: ["npm", "run", "dev"]

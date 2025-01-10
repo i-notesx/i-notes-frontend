@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  i-notes-frontend:
+    command: ["npm", "run", "build"]
+    volumes:
+      - /app/src
+      - /app/vite.config.js
+    newworks:
+      - reverse-proxy
+
+newworks:
+  reverse-proxy:
+    external: true
