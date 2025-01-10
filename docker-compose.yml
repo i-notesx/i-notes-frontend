@@ -4,11 +4,3 @@ services:
   i-notes-frontend:
     build:
       context: .
-    develop:
-      watch:
-        - path: ./src
-          action: sync
-          target: app/src
-    ports:
-       - "5173:5173"
-    command: ["npm", "run", "dev"]

@@ -3,3 +3,11 @@ version: '3'
 services:
   i-notes-frontend:
     command: ["npm", "run", "dev"]
+    develop:
+      watch:
+        - path: ./src
+          action: sync
+          target: app/src
+    ports:
+       - "5173:5173"
+    command: ["npm", "run", "dev"]
