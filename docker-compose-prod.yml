@@ -2,11 +2,11 @@ version: '3'
 
 services:
   i-notes-frontend:
-    command: ["npm", "run", "docker:prod"]
-    newworks:
+    command: ["npm", "run", "build"]
+    networks:
       - reverse-proxy
     volumes:
-      /app/dist:/public/inotes
+      - /app/dist:/public/inotes
 networks:
   reverse-proxy:
     external: true
