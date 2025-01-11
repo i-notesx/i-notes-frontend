@@ -2,7 +2,7 @@ version: '3'
 
 services:
   i-notes-frontend:
-    command: ["npm", "run", "build"]
+    command: ["npm", "run", "docker:prod"]
     newworks:
       - reverse-proxy
     volumes:
