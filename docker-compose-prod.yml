@@ -6,7 +6,7 @@ services:
     networks:
       - reverse-proxy
     volumes:
-      - public/inotes:/app/dist
+      - public:/app/dist
 networks:
   reverse-proxy:
     external: true
