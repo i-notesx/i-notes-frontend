@@ -6,7 +6,10 @@ services:
     newworks:
       - reverse-proxy
     volumes:
-      /app/dist:/usr/share/nginx/html/inotes
+      /app/dist:/public/inotes
 networks:
   reverse-proxy:
+    external: true
+volumes:
+  public:
     external: true
