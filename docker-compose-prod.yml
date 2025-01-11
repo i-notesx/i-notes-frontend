@@ -7,8 +7,8 @@ services:
       - reverse-proxy
     volumes:
       - type: volume
-        source: app/dist
-        target: public
+        source: public
+        target: app/dist
         volume:
           subpath: inotes
 
