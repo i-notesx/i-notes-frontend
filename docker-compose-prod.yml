@@ -10,7 +10,7 @@ services:
         source: public
         target: /app/dist
         volume:
-          subpath: inotes
+          subpath: /inotes
 
 networks:
   reverse-proxy:
