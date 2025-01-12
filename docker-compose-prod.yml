@@ -8,7 +8,7 @@ services:
     volumes:
       - type: volume
         source: public
-        target: /app
+        target: .
         volume:
           subpath: inotes
 
