@@ -1,5 +1,15 @@
 # Vue 3 + Vite
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+### docker
+docker-compose.yml是基础配置
+docker-compose-overide.yml 是本地开发配置
+docker-compose-prod.yml 是生成配置
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+### 通过docker启动
+
+npm run docker:dev
+
+### 停止docker
+
+npm run docker:sopt
+
