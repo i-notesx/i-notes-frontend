@@ -6,11 +6,13 @@ services:
     networks:
       - reverse-proxy
     volumes:
-      - type: volume
-        # source: public
-        target: /app
-        volume:
-          subpath: /inotes
+      - public:/app/dist
+    # volumes:
+    #   - type: volume
+    #     source: public
+    #     target: /app
+    #     volume:
+    #       subpath: /inotes
 
 networks:
   reverse-proxy:
