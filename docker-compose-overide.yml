@@ -3,6 +3,12 @@
 services:
   i-notes-frontend:
     command: ["npm", "run", "dev"]
+    volumes:
+      - ./src:/app/src
+      - ./package.json:/app/package.json
+      - ./package-lock.json:/app/package-lock.json
+      - ./yarn.lock:/app/yarn.lock
+
     develop:
       watch:
         - path: ./src
